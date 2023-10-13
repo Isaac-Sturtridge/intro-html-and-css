@@ -1,0 +1,36 @@
+body {
+ background-color: rgba(60, 160, 164, 0.779);
+}
+
+#portrait {
+    height: 150px;
+    width: auto;
+    border-radius: 100%;
+}
+
+#family {
+    height: 200px;
+    width: auto;
+    border: 10px solid rgba(77, 48, 16, 0.936);
+    padding: 50px 20px 5px 140px;
+    background-color: rgb(112, 60, 42);
+}
+
+h1, h2, h3 {
+    color: rgb(34, 63, 141);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+a {
+    font-size: 20px;
+}
+
+ol, ul {
+    color: #00fe15;
+}
+
+p {
+    margin: 10px 20px 5px 20px;
+    text-align: center;
+}
