@@ -1,16 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
  background-color: rgba(60, 160, 164, 0.779);
 }
 
 #portrait {
-    height: 150px;
+    height: 300px;
     width: auto;
     border-radius: 100%;
 }
 
 #family {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 90%;
     border: 10px solid rgba(77, 48, 16, 0.936);
     padding: 50px 20px 5px 140px;
     background-color: rgb(112, 60, 42);
@@ -23,7 +27,7 @@ h1, h2, h3 {
 }
 
 a {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 ol, ul {
@@ -33,4 +37,51 @@ ol, ul {
 p {
     margin: 10px 20px 5px 20px;
     text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    background-color: orangered;
+}
+
+table {
+    border: 10px solid purple;
+    padding: 50px;
+    margin: 10px;
+    border-spacing: 20px;
+}
+
+th {
+    text-decoration: underline;
+    padding: 20px;
+}
+
+td {
+   background-color: rgb(17, 0, 255); 
+   padding: 30px;
+   color: yellow;
+}
+
+@media screen and (max-width: 1024px){
+    * {
+        box-sizing: border-box;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px;
+        background-color: orangered;
+    }
+
+    #family {
+        padding: 20px 10px;
+    }
+    #portrait {
+        height: auto;
+        width: 90%;
+    }
 }
