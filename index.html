@@ -10,6 +10,22 @@
 
 <body>
     <header id="header">
+        <nav>
+            <ul>
+                <a href="#header">
+                    <li>Home</li>
+                </a>
+                <a href="#occupation">
+                    <li>Occupation</li>
+                </a>
+                <a href="#people">
+                    <li>People</li>
+                </a>
+                <a href="#chemistry">
+                    <li>Chemistry</li>
+                </a>
+            </ul>
+        </nav>
         <h1>
             Walter White
         </h1>
@@ -20,7 +36,7 @@
             alt="Walter White, wearing a hat, background desert">
         
         <section>
-        <h2>Occupation</h2>
+        <h2 id="occupation">Occupation</h2>
         <p>Chemistry Teacher at <a href="https://albuquerquehigh.aps.edu/">Albuquerque High School</a>. Excellent cook.
         </p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid possimus fugiat eligendi dolores quo
@@ -35,8 +51,9 @@
             quaerat, exercitationem saepe quidem aliquam dolorem debitis voluptatum iste, autem excepturi sint, cumque
             earum aut.</p>
         </section>
-
+        <h2 id="people">People</h2>
         <div class="container">
+            
             <section>
                 <h3>Family members</h3>
                 <img id="family"
@@ -73,6 +90,7 @@
                 </section>
         
             <section>
+                <h3>Additional Info</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, necessitatibus! Tempore illum eum nulla. Animi,
                     earum dignissimos. Quam, dignissimos quasi obcaecati sunt fugiat numquam voluptatibus delectus facilis?
                     Iste, neque hic.</p>
@@ -83,8 +101,11 @@
                     nemo aspernatur fugiat explicabo, cupiditate corporis. Magnam a culpa impedit ex, illo consectetur quas.</p>
             </section>
         </div>
-        <br>
-        <article class="container">
+
+        <h2 id="chemistry">Chemistry</h2>
+       
+            <div class="container">
+                <article>
             <section>
                 <h3>How to Cook Blue Meth (not real!)</h3>
                 <p>
@@ -98,6 +119,7 @@
                 </ol>
             </section>
             <section>
+                <h3>PickList</h3>
                 <label for="element-input">Choose an element:</label>
                 <input list="element-list" type="text" name="element-input">
                 <datalist id="element-list">
@@ -109,6 +131,7 @@
                   </datalist>
             </section>
             <section>
+                <h3>Customer Orders</h3>
                   <table>
                     <thead>
                         <tr>
@@ -124,8 +147,12 @@
                     </tbody>
                   </table>
             </section>
-            <p>Buy your meth here: <button type="button">BUY METH!</button></p>
-        </article>
+            <section>
+                <h3>Shop</h3>
+                <p>Buy your meth here: <button type="button" class="order-button">BUY METH!</button></p>
+            </section>
+            </article>
+        </div>
 
     </main>
     <footer>
